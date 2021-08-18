@@ -1,23 +1,22 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1rem;
-  line-height: 1.5;
+* {
+  margin: 0;
+  padding:0;
   background-color: black;
+
 }
 
-.header {
-  display: flex;
-  font-size: 20px;
-  color: purple;
-  align-items: center;
+.body {
+  
+  line-height: 1.5;
+  
 }
 
-.header h1 {
-  color: blueviolet;
-  font-size: 100px;
-  font-family: "fantasy";
-  margin-left: 20px;
+.header h1{
+  color: rgb(93, 0, 150);
+  font-size: 120px;
+  padding:10px 10px 10px 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .hero {
@@ -26,41 +25,45 @@ body {
   image-rendering: url("..images/gitch2.jpeg");
   background-size: cover;
   background-position: center;
-  display: block;
+ 
 }
 
 .navbar {
-  width: 100%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+ justify-content:right;
+ flex-direction: row;
+ align-items: flex-end;
 }
+  
 
 .navbar ul {
-  display: flex;
+text-align: right;
+
 }
 
 .navbar ul li {
-  padding: 10px;
   list-style-type: none;
+  justify-content: space-between;
 }
 
 a {
   text-decoration: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  
 }
 
 a:hover {
   color: #f202ff;
 }
 
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.3rem;
   color: rgb(179, 136, 240);
   font-weight: 700;
   line-height: 1.1;
@@ -75,51 +78,43 @@ h3 {
   margin: auto;
 }
 
-h4 {
-  font-size: 2.5rem;
-}
-
-h5 {
-  font-size: 2rem;
-}
-
-h6 {
-  font-size: 1.5rem;
-}
-
 p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  display: inline-flex;
+
 }
 
 code > h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 main {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: flex-end;
 }
 
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  background: #ffffff;
+  background-color: #000000;
 }
 
 .sidebar {
   display: flex;
   justify-content: flex-start;
 }
-aside {
+.aside {
   flex: 1;
   background-color: #ffffff;
   padding: 20px;
   justify-content: column;
+}
+
+.sample-img {
+  border-style: groove;
+  margin-left: 70px;
+  border:red url(picme.jps);
 }
 .row {
   display: flex;
@@ -129,7 +124,6 @@ aside {
 }
 
 .justify-center {
-
   flex-direction: row;
   align-items: right;
   align-content: stretch;
@@ -155,15 +149,18 @@ aside {
 
 .code-card .card-header {
   position: relative;
-  margin: 0.2.5rem 0 0rem;
+  margin: 0.2rem.5rem 0 0rem;
   padding: 0rem 1rem;
   text-align: center;
+
+  
 }
 
-.code-card:hover,
+.card-header:hover, 
 .code-card:hover {
-  box-shadow: inset 2px 2px 20px;
+  box-shadow: outset 1px 1px 20px;
   transition: "margin-right" 2s, color 1s;
+  color:red;
 }
 
 .code-card .code-block {
@@ -185,37 +182,48 @@ aside {
 }
 
 @media screen and (max-width: 768px) {
-  main {
+  .header {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  nav {
+  .navbar{
     flex-direction: column;
     text-align: center;
     background-color: #ffffff;
   }
 
-  ul {
+  .ul {
     list-style-type: none;
-    font-family: "fantasy";
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 30px;
   }
-  aside {
+  .aside {
     order: 2;
+    align-items: center;
   }
 
-  header {
+  .header {
     background-color: #ffffff;
   }
 
   .card-column {
     flex-wrap: wrap;
     max-width: 50%;
+    justify-content: center;
   }
 
   .card-column:last-child {
     flex-grow: 1;
+    align-items: center;
   }
-  footer {
+  footer h3 {
     background-color: #ffffff;
+    padding: 20px;
+    margin:-20px;
   }
+
 }
+
+
