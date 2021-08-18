@@ -1,0 +1,221 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  font-size: 20px;
+  color: purple;
+  align-items: center;
+}
+
+.header h1 {
+  color: blueviolet;
+  font-size: 100px;
+  font-family: "fantasy";
+  margin-left: 20px;
+}
+
+.hero {
+  width: 100%;
+  max-height: 800px;
+  image-rendering: url("..images/gitch2.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  padding: 10px;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f202ff;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  color: rgb(179, 136, 240);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: auto;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+code > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: flex-start;
+}
+aside {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  justify-content: column;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+}
+
+.justify-center {
+
+  flex-direction: row;
+  align-items: right;
+  align-content: stretch;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.card-column {
+  flex: 2 0 100%;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.code-card {
+  flex-wrap: wrap;
+  flex-direction: column;
+  outline: 2px solid rgb(31, 31, 31);
+  outline-offset: 1px;
+  transition: all 0.5s ease-in-out;
+  color: rgb(194, 159, 252);
+  text-align: center;
+}
+
+.code-card .card-header {
+  position: relative;
+  margin: 0.2.5rem 0 0rem;
+  padding: 0rem 1rem;
+  text-align: center;
+}
+
+.code-card:hover,
+.code-card:hover {
+  box-shadow: inset 2px 2px 20px;
+  transition: "margin-right" 2s, color 1s;
+}
+
+.code-card .code-block {
+  flex-grow: 1px;
+}
+
+.code-card pre {
+  white-space: pre-wrap;
+  overflow: auto;
+  tab-size: 3;
+  padding: 1.2rem 1rem 1.2rem 1rem;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+}
+
+.code-card pre:active {
+  user-select: all;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  ul {
+    list-style-type: none;
+    font-family: "fantasy";
+    font-size: 30px;
+  }
+  aside {
+    order: 2;
+  }
+
+  header {
+    background-color: #ffffff;
+  }
+
+  .card-column {
+    flex-wrap: wrap;
+    max-width: 50%;
+  }
+
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+  footer {
+    background-color: #ffffff;
+  }
+}
