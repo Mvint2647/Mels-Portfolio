@@ -1,108 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-    <title>My Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  <title>Welcome to My Portfolio</title>
+</head>
 
-  <body>
-    <header class="header">
-      <h1>Mel V</h1>
-    </header>
+<body>
+   
+  <header>
+     
+    <h1>
+      Mel V
+     </h1>
 
-<section>
- 
-            <div class="navbar">
-               
-                <a href="#">About Me</a> 
-                <a href="#">My Work</a> 
-                <a href="#">Resume</a>
-                <a href="#">Contact Me</a>
-            </div>
-        
-</section>  
-
-<section>
+      <nav>
+        <a class="nav-link" href="#about-me">About Me</a>
+        <a class="nav-link" href="#my-work">My Work</a>
+        <a class="nav-link" href="#resume">Resume</a>
+        <a class="nav-link" href="#contact-me">Contact Me</a>
+      </nav>
+     
+</header>
+    <div>
+      <img src="./assets/images/gitch2copy.png" class="img" />
+    </div>
+            
     <main>
     
-      <img src="./assets/images/gitch2copy.png" class="hero"/>
-    </section>
+      <section id="about-me" class="aboutme sections">
+        <h2>About Me</h2>
+        <p>Hello, my name is Melissa, but I go by Mel.
+          A little bit about me; I have studied in Graphic Design as well as in Computer Integrated Tech. I am hoping to excel in Web Development to combine my skills. I'm ultimately working towards being my own boss. Previous jobs that I have quickly excelled in have given me experience as far as shaping the idea of what I want my future career life to be. 
+        </p>
 
-          <div>
-            <h2>To the Right of the Sidebar</h2>
-            <div class="sample-img"></div>
-            <img src="./assets/images/picme.jpg" class="sample-img"/>
-         </div>
-
-        </section>
-      </aside>
-    </main>
-    <div>
-
-      <section class="row justify-center">
-        <div class="card-column">
-          <figure class="card code-card">
-            <h2 class="card-header">About Me</h2>
-            <div class="card-body">
-              <p>I have an Associates in Graphic Design and I am currently enrolled in a Web Development BootCamp!</p>
-            </div>
- <pre class="code-block"><code> 
-                       
-
-</code></pre>
-          </figure>
-        </div>
-        <div class="card-column">
-          <figure class="card code-card">
-            <h2 class="card-header"> My Work</h2>
-            <form id="My Work">
-            <div class="card-body">
-              <p>
-                <img src="./assets/images/mockexpect.png" class="main"/>
-
-              </p>
-            </div>
-            <pre class="code-block"><code>
-
-</code></pre>
-          </figure>
-        </div>
-    <div></div>
-
-        <div class="card-column">
-          <figure class="card code-card">
-            <h2 class="card-header">Contact Me</h2>
-            <div class="card-body">
-                <form id="Contact Me">
-              <p>Contact Information</p>
-              <p>https://www.behance.net/vinv3</p>
-             </div>
-            <pre class="code-block"><code>
-
-
-</code></pre>
-          </figure>
-        </div>
-        <div class="card-column">
-          <figure class="card code-card">
-            <h2 class="card-header">Resume</h2>
-            <div class="card-body">
-                <form id="Resume"></form>
-              <p>Currently building my resume</p>
-            </div>
-            <pre class="code-block"><code></code>
-
-</code></pre>
-            
-          </figure>
-        </div>
+        <p> I own a Volkswagen GTI and I love to modify my dream car.
+          I also love dogs and currently I have a dachshaund beagle mix. She is full of personality and energy!
+        </p>
       </section>
-    </div>
+      <section id="my-work" class="myworksections">
+       
+          <h2>My work</h2>
+          <h4>(More coming soon..)</h4>
+          <p>
+          <img src="./assets/images/mockexpect.png" class="img3" />
+        </p>
+      </section>
+      <section id="resume" class="resume sections">
+        <h2>Resume</h2>
+        <p>
+        Coming soon..
+        </p>
+      </section>
+     
+      <aside>
+
+        <article>
+          <img src="./assets/images/picme.jpg" class="img2" />
+          <img src="assets/images/space.png" class="img2"/>
+          <img src="assets/images/alien.png" class="img2" />
+        </article>
+     </aside>
+      <section id="contact-me" class="contactme sections">
+        <h2>Contact Info:</h2>
+       
+        <ul>
+          
+              <li> <a href="https://github.com/">Github</a></li>
+              <li> <a href="https://www.behance.net/Melissasta10d9">Behance</a></li>
+              
+        </ul>
+      </section>
+
+    </main>
+
+    <form>
+      <ul>
+        <li>
+          <label class="text-right" for="name">Name:</label>
+          <input type="text" id="name" name="user-name">
+        </li>
+        <li>
+          <label class="text-right" for="email">Email:</label>
+          <input type="text" id="email" name="user-email">
+        </li>
+      </ul>
+      <div class="text-center">
+        <button type="submit">SEND</button>
+      </div>
+    </form>
+
+      
     <footer>
-      <h3>Designed by Melissa</h3>
+      <h3>
+       
+        &#9830; Designed by Melissa &#9830;
+      </h3>
     </footer>
+ 
+ 
   </body>
+
 </html>
