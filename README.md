@@ -28,10 +28,9 @@ A trial and error of my first Portfolio Webpage
 
 
 ## Screenshots
-![Mels-Portfolio](assets/images/mockexpect.png)
------------------------update------------------
+
 ![Mels-Portfolio](assets/images/ss1030.png)
-![Mels-Portfolio](assets/images/ss1031.png)
+
 ![Mels-Portfolio](assets/images/ss1032.png)
 
 =======
